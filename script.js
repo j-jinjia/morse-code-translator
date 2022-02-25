@@ -1,4 +1,5 @@
-import {translateEnglishToMorse} from "./functions.js"
+import morseCode from "./morseobject.js"
+//import {translateEnglishToMorse} from "./functions.js"
 /**  Morse code pseudo code
  *  1.- user input in input field
  *  2.- Event listeners on input field for each letter
@@ -12,9 +13,31 @@ import {translateEnglishToMorse} from "./functions.js"
 //DOM
 const inputMorse = document.querySelector(".input");
 const outputMorse = document.querySelector(".output");
+const translateButton = document.querySelector(".translate")
 
 
-
+//functions
+// sperates each letter of the input word. 
+export const translateEnglishToMorse = () =>{
+    const letterArr = inputMorse.value.split("");
+    //const newString = letterArr.replace(/,/g, "")
+    //console.log(newString);
+    //console.log(Object.values(morseCode));
+    //console.log(Object.keys(morseCode)) ;
+    let arrayMorse=[];
+    
+    letterArr.forEach(element => {
+        if (element in morseCode);
+            console.log(element);
+            const translation = morseCode[element];
+            arrayMorse.push(translation);
+            //console.log(translation);
+            //console.log(arrayMorse);
+        });
+    const stringMessage = arrayMorse.toString();
+    const cleanMessage = stringMessage.replace(/,/g," ");
+    console.log(outputMorse.innerText = cleanMessage);
+};
 //eventlisteners
 
-inputMorse.addEventListener("input",translateEnglishToMorse);
+translateButton.addEventListener("click",translateEnglishToMorse);
