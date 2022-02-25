@@ -1,4 +1,6 @@
-import { translateEnglishToMorse } from "./functions.js";
+import functions from "./functions.js";
+import {translateEnglishToMorse} from "./translateFunc.js";
+
 /**  Morse code pseudo code
  *  1.- user input in input field
  *  2.- Event listeners on input field for each letter

@@ -1,22 +1,10 @@
 import morseCode from "./morseobject.js"
+import {translateEnglishToMorse} from "./translateFunc.js";
 import { inputMorse,outputMorse} from "./script.js";
-const letterArr = inputMorse.value.split("");
-export const translateEnglishToMorse = () =>{
-    //const newString = letterArr.replace(/,/g, "")
-    //console.log(newString);
-    //console.log(Object.values(morseCode));
-    //console.log(Object.keys(morseCode)) ;
-    let arrayMorse=[];
-    
-    letterArr.forEach(element => {
-        if (element in morseCode);
-            //console.log(element);
-            const translation = morseCode[element];
-            arrayMorse.push(translation);
-            //console.log(translation);
-            //console.log(arrayMorse);
-        });
-    const stringMessage = arrayMorse.toString();
-    const cleanMessage = stringMessage.replace(/,/g," ");
-    outputMorse.innerText = cleanMessage;
-};
+const letterArr =() =>{
+    const wordArray = inputMorse.value.split("");
+    return wordArray
+}
+const stringMessage = arrayMorse.toString();
+const cleanMessage = stringMessage.replace(/,/g," ");
+outputMorse.innerText = cleanMessage;
