@@ -1,7 +1,7 @@
 import morseCode from "./morseobject.js"
 import { inputMorse,outputMorse} from "./script.js";
-const letterArr = inputMorse.value.split("");
 export const translateEnglishToMorse = () =>{
+    const letterArr = inputMorse.value.split("");
     //const newString = letterArr.replace(/,/g, "")
     //console.log(newString);
     //console.log(Object.values(morseCode));
