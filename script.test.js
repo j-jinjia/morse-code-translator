@@ -7,6 +7,10 @@ describe("translate words from english to morse", () => {
     const result = translateEnglishToMorse("walk");
     expect(result).toBe(".-- .- .-.. -.-");
   });
+  it("WALK (all uppercase) should translate correctly to morse code, by converting it to lowercase before translating", () => {
+    const result = translateEnglishToMorse("WALK");
+    expect(result).toBe(".-- .- .-.. -.-");
+  });
 
   // positive tests for a single letter
   it("b should translate correctly to morse code", () => {
@@ -24,6 +28,11 @@ describe("translate words from english to morse", () => {
       const result = translateEnglishToMorse("+");
       expect(result).toBe("invalid");
   });
+  it("ç letter should not translate and return invalid text", () =>{
+      const result = translateEnglishToMorse("ç");
+      expect(result).toBe("invalid");
+  });
+
 });
 
 //describe("translates morse code to english", () => {});
