@@ -1,12 +1,4 @@
-import {describe,it,expect} from "@jest/globals";
-import {inputValue} from "./script.js"
-describe("Testing translation form english to morse", ()=>{
-    it("Should return the hello as morse translation", ()=>{
-        const result = "Hello"
-        expect(result).toBe("....   .   ._..   ._..   ___");
-});
-});
-import { translateEnglishToMorse } from "./translator.js";
+import { translateEnglishToMorse } from "./functions.js";
 import { expect, it, describe } from "@jest/globals";
 
 describe("translate words from english to morse", () => {
