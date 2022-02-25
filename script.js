@@ -8,7 +8,7 @@ import morseCode from "./morseobject.js"
  *  5.- Display on output translation screen. 
 */
 
-
+//global variables 
 //DOM
 const inputMorse = document.querySelector(".input");
 const outputMorse = document.querySelector(".output");
@@ -18,12 +18,17 @@ const outputMorse = document.querySelector(".output");
 const translateEnglishToMorse = () =>{
     const letterArr = inputMorse.value.split("")
     console.log(letterArr);
+    console.log(Object.values(morseCode));
+    //console.log(Object.keys(morseCode)) ;
     letterArr.forEach(element => {
+        console.log(element);
+        if (element == Object.keys(morseCode)){
+            return (Object.values(morseCode));
+        }
         
     });
-    return letterArr;
 };
 
 //eventlisteners
 
-inputMorse.addEventListener("input", inputValue);
+inputMorse.addEventListener("input",translateEnglishToMorse);
