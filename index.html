@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
-    <title>Morse Code Translator</title>
-</head>
-<body>
-    <h1>Morse Code Translator</h1>
-    <p>Welcome to my morse code translator</p>
-    <input class ="input" type="text">
-    <button class="translate">Translate</button>
-    <p class="output">Output</p>
-    <script src="script.js" type="module"></script>
-</body>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="display">
+        <h1 class="display__header">Morse Translator</h1>
+        <label for="english-word">Type your text here</label> <br>
+        <input id="english-word" type="text" />
+        <p id="morse-translate-result"> Output translation </p>
+      </div>
+      <div class="buttons">
+        <button class="buttons__styles" id ="translate-morse-button">Translate to Morse</button>
+        <button class="buttons__styles" id ="translate-english-button">Translate to English</button>
+        <button class="buttons__styles" id ="clear-button">Clear</button>
+      </div>
+      <script src="./script.js" type="module"></script>
+    </main>
+  </body>
 </html>
