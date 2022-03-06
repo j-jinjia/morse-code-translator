@@ -1,0 +1,52 @@
+@import "../abstract/mixins.scss";
+@import "../abstract/variables.scss";
+
+@media screen and (min-width: 1024px){
+    
+    body{
+        background-color: $body-background-color;
+        .container{
+            height: 50%;
+            margin:2rem;
+
+            .instructions{
+                padding:1rem;
+                .instructions__header{
+                    font-size: $font-size4;
+                }
+                .list{
+                    font-size: $font-size2;
+                    list-style: inside;
+                    list-style-type: upper-roman;
+                }
+            }
+            .display{
+                .display__header{
+                    font-size: $font-size4;
+                } 
+                .display__description{
+                    @include box ($padding-1,$font-size3);
+                }
+                .display__label{
+                    @include box ($padding-1,$font-size3);
+        
+                }          
+                .display__input{
+                    font-size: $font-size3;
+                }
+                .display__result{
+                    @include box ($padding-1,$font-size3);
+                }
+            }
+            .buttons{
+                .buttons__styles{
+                    padding:2rem;
+                    margin:1.5rem;
+                    font-size: $font-size2;
+                    
+                }
+            }
+        }
+    }
+        
+}

@@ -1,0 +1,11 @@
+.buttons .buttons__styles {
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #FCD1D1;
+}
+.buttons .buttons__styles:hover {
+  cursor: pointer;
+  background-color: #fc8a8a;
+}
