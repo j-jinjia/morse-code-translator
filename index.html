@@ -4,16 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos:ital@1&family=Smooch+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
   </head>
   <body>
     <main class="container">
+      <div class="instructions"> 
+        <h2 class="instructions__header">Instructions</h2>
+        <ul class="list">
+          <li class="list__items">Type in English text or Morse code in the designated area</li>
+          <li class="list__items">Use the buttons for the desired translation</li>
+          <li class="list__items">Use the clear button to erease the translation and the input</li>
+          <li class="list__items">Use this translator at your own risk. I won't ask you why would you ever need this. User privacy is important for me...</li>
+        </ul>
+      </div>
+
       <div class="display">
-        <h1 class="display__header">Morse Translator</h1>
-        <label for="english-word">Type your text here</label> <br>
-        <input id="english-word" type="text" />
-        <p id="morse-translate-result"> Output translation </p>
+        <h1 class="display__header">Morse decoder</h1>
+        <p class="display__description"> For Morse to English and English to Morse translations, please use me! </p>
+        <label class="display__label"for="english-word">Type your text here</label> <br>
+        <input class="display__input" id="english-word" type="text" autofocus/>
+        <p class="display__result" id="morse-translate-result"> Output translation </p>
       </div>
       <div class="buttons">
         <button class="buttons__styles" id ="translate-morse-button">Translate to Morse</button>
