@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Smooch Sans", sans-serif;
+}
+
+.buttons .buttons__styles {
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #FCD1D1;
+}
+.buttons .buttons__styles:hover {
+  cursor: pointer;
+  background-color: #fc8a8a;
+}
+
+.container {
+  height: 100vh;
+  background-color: #AEE1E1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .instructions {
+  padding: 1rem;
+}
+.container .instructions .instructions__header {
+  font-size: 2rem;
+  font-family: "Genos", sans-serif;
+}
+.container .instructions .list {
+  font-size: 1rem;
+  list-style: inside;
+  list-style-type: upper-roman;
+}
+.container .display .display__header {
+  padding: 1rem;
+  font-family: "Genos", sans-serif;
+}
+.container .display .display__description {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.container .display .display__label {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.container .display .display__input {
+  margin: 1rem;
+  padding: 1rem;
+  width: 90vw;
+  font-size: large;
+}
+.container .display .display__result {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #ECE2E1;
+  }
+  body .container {
+    height: 50%;
+    margin: 1rem;
+  }
+  body .container .instructions {
+    padding: 1rem;
+  }
+  body .container .instructions .instructions__header {
+    font-size: 3rem;
+  }
+  body .container .instructions .list {
+    font-size: 1.5rem;
+    list-style: inside;
+    list-style-type: upper-roman;
+  }
+  body .container .display .display__header {
+    font-size: 4rem;
+  }
+  body .container .display .display__description {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  body .container .display .display__label {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  body .container .display .display__result {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  body .container .buttons .buttons__styles {
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: #ECE2E1;
+  }
+  body .container {
+    height: 50%;
+    margin: 2rem;
+  }
+  body .container .instructions {
+    padding: 1rem;
+  }
+  body .container .instructions .instructions__header {
+    font-size: 4rem;
+  }
+  body .container .instructions .list {
+    font-size: 2rem;
+    list-style: inside;
+    list-style-type: upper-roman;
+  }
+  body .container .display .display__header {
+    font-size: 4rem;
+  }
+  body .container .display .display__description {
+    padding: 1rem;
+    font-size: 3rem;
+  }
+  body .container .display .display__label {
+    padding: 1rem;
+    font-size: 3rem;
+  }
+  body .container .display .display__input {
+    font-size: 3rem;
+  }
+  body .container .display .display__result {
+    padding: 1rem;
+    font-size: 3rem;
+  }
+  body .container .buttons .buttons__styles {
+    padding: 2rem;
+    margin: 1.5rem;
+    font-size: 2rem;
+  }
+}
